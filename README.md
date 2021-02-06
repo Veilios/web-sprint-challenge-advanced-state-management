@@ -33,9 +33,9 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Go [here](./CodeGrade-webhook.md) to setup the CodeGrade webhook before you begin.
 
 #### Setup Client Code
-- [ ] **LOOK** at your `src` directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
-- [ ] **RUN** `npm install` to retrieve all `client-side` the dependencies.
-- [ ] **RUN** `npm start` to fire up your React application. There ought to be a pretty little message awaiting you welcoming you to the app. `Follow` the prompting.
+- [Done] **LOOK** at your `src` directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
+- [Done] **RUN** `npm install` to retrieve all `client-side` the dependencies.
+- [Done] **RUN** `npm start` to fire up your React application. There ought to be a pretty little message awaiting you welcoming you to the app. `Follow` the prompting.
 
 **LOOK** at all the files you've been given for this project. Note that you will be interacting with an api during this project. Below is documentation on how to interact with the **API**.
 
