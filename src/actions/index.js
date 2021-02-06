@@ -1,11 +1,28 @@
-import axios from 'axios';
+// import axios from 'axios';
 
 export const CLEAR_ERROR = "CLEAR_ERROR";
 export const FETCH_SMURFS = "FETCH_SMURFS";
 export const ADD_SMURF = "ADD_SMURF";
 export const FAILED = "FAILED";
+export const SUCCESS = "SUCCESS";
 
+export const getSmurfs = () => dispatch => {
+    dispatch({type: CLEAR_ERROR});
+    dispatch({type: FETCH_SMURFS});
+    // axios.get(`http:/localhost:3333/smurfs`)
+    //     .then(res => {
+    //         console.log(res)
+    //         dispatch({type:SUCCESS})
+    //     })
+    //     .catch(err => {
+    //         console.log("Error: ", err);
+    //         dispatch({type: FAILED, payload: err.message});
+    //     })
+};
 
+export const addSmurf = () => dispatch => {
+    dispatch({type: ADD_SMURF});
+};
 
 
 //Task List:
