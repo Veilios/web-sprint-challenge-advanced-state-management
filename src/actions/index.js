@@ -1,5 +1,13 @@
 import axios from 'axios';
 
+export const CLEAR_ERROR = "CLEAR_ERROR";
+export const FETCH_SMURFS = "FETCH_SMURFS";
+export const ADD_SMURF = "ADD_SMURF";
+export const FAILED = "FAILED";
+
+
+
+
 //Task List:
 //1. Add fetch smurfs action: 
 //              - fetch and return initial list of smurfs
