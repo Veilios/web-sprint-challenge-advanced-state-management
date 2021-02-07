@@ -13,6 +13,9 @@ class AddForm extends React.Component {
                     <label htmlFor="position">Position:</label><br/>
                     <input onChange={this.handleChange} name="position" id="position" />
 
+                    <label htmlFor="nickname">Nickname:</label>
+                    <input onChange={this.handleChange} name="nickname" id="nickname" />
+
                     <label htmlFor="description">Description:</label><br/>
                     <input onChange={this.handleChange} name="description" id="description" />
                 </div>
