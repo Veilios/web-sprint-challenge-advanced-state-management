@@ -25,9 +25,9 @@ const reducer = (state = initialState, action)=>{
         };
         case SUCCESS: {
             return {
-                ...state, isLoading: false, smurf: [...state.smurf, action.payload]
+                ...state, isLoading: false, smurfs: [...state.smurfs, action.payload]
             }
-        }
+         }
         case ADD_SMURF: {
             return {
                 ...state, 

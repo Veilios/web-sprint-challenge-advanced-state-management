@@ -2,10 +2,10 @@ import React from 'react';
 
 class Smurf extends React.Component {
     render() {
-        const { smurf } = this.props;
+        const { smurfs } = this.props;
 
         return(<div data-testid="smurf" className="card">
-            {smurf.map((villager) => {
+            {smurfs.map((smurf) => {
                 return (
                     <div>
                         <h2>{smurf.name}</h2>

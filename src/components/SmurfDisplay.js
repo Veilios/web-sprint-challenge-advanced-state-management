@@ -1,19 +1,25 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 
+// Components
+import Smurf from './Smurf';
+
+// Actions
 import { getSmurfs } from '../actions';
 
-export const SmurfDisplay = (props) => {
+class SmurfDisplay extends React.Component {
 
-    useEffect(() => {
-        props.getSmurfs();
-    })
+    componentDidMount(){
+        this.props.getSmurfs();
+    };
 
-    return(
-        <div>
-            
-        </div>
-    )
+    render() {
+        return (
+            <div>
+                 <Smurf smurfs={this.props.smurfs} />
+            </div>
+        )
+    }
 }
 
 const mapStateToProps = state => {
