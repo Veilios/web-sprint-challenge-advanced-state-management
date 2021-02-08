@@ -73,7 +73,7 @@ Example of the shape of data to be sent to the `POST` endpoint. Note that id doe
 }
 ```
 
-- [ ] Double check to make sure that a smurf is created correctly once your functionality is built out.
+- [Done] Double check to make sure that a smurf is created correctly once your functionality is built out.
 
 Initially Brainey will be in the array, but it takes more than one smurf to make the village. Be sure to add a few smurfs to populate our smurf village.
 
@@ -102,9 +102,9 @@ Example of object created in Smurf DB:
 ### Task 2: Project Requirements
 Your finished project must include all of the following requirements:
 
-- [ ] Plan and implement how you are going to manage your state for your application
-- [ ] You _must_ use Redux as your state management system
-- [ ] Complete the tasks listed within:
+- [Done] Plan and implement how you are going to manage your state for your application
+- [Done] You _must_ use Redux as your state management system
+- [Done] Complete the tasks listed within:
         * `./reducers/index.js`
         * `./actions/index.js`
         * `./index.js`
@@ -137,7 +137,7 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Ensure that your projects are complete on your <firstName-lastName> branch.
-- [ ] Merge your <firstName-lastName> branch into your main branch.
-- [ ] Push your main branch to github and check that it is registers within codegrade.
-- [ ] Check your personal feedback the following Monday. For more information check [here](https://www.notion.so/lambdaschool/How-to-View-Feedback-in-CodeGrade-Student-facing-c5147cee220c4044a25de28bcb6bb54a)
+- [Done] Ensure that your projects are complete on your <firstName-lastName> branch.
+- [Done] Merge your <firstName-lastName> branch into your main branch.
+- [Done] Push your main branch to github and check that it is registers within codegrade.
+- [Done] Check your personal feedback the following Monday. For more information check [here](https://www.notion.so/lambdaschool/How-to-View-Feedback-in-CodeGrade-Student-facing-c5147cee220c4044a25de28bcb6bb54a)
