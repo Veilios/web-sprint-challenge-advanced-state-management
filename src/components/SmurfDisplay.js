@@ -16,7 +16,7 @@ import { getSmurfs } from '../actions';
     render() {
         return (
             <div>
-                {this.isLoading ? <p>Loading Smurfs ....</p> : this.props.smurfs.map(smurf => <Smurf smurf={smurf} />)}
+                {this.isLoading ? <p>Loading Smurfs ....</p> : this.props.smurfs.map(smurf => <Smurf key={smurf.id} smurf={smurf} />)}
                 {this.error === '' ? null : <p>{this.error}</p>}
             </div>
         )

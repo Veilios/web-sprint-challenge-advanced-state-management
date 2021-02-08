@@ -8,7 +8,8 @@ const initialFormState = {
     name: '',
     position: '',
     nickname: '',
-    description: ''
+    description: '',
+    id: Date.now()
 };
 
 class AddForm extends React.Component {
@@ -49,7 +50,7 @@ class AddForm extends React.Component {
                     <input onChange={this.handleChange} name="description" id="description" />
                 </div>
 
-                <div data-testid="errorAlert" className="alert alert-danger" role="alert">Error: </div>
+                {this.props.error === '' ? null : <div data-testid="errorAlert" className="alert alert-danger" role="alert">Error: {this.props.error}</div>}
                 <button>Submit Smurf</button>
             </form>
         </section>);
@@ -58,7 +59,8 @@ class AddForm extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        smurfs: state.smurfs
+        smurfs: state.smurfs,
+        error: state.error
     }
 }
 
