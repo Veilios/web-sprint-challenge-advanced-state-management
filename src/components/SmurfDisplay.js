@@ -7,24 +7,22 @@ import Smurf from './Smurf';
 // Actions
 import { getSmurfs } from '../actions';
 
-class SmurfDisplay extends React.Component {
+ class SmurfDisplay extends React.Component {
 
-    componentDidMount(){
-        this.props.getSmurfs();
-    };
+    componentDidMount() {
+        this.props.getSmurfs()
+    }
 
     render() {
         return (
             <div>
-                {this.props.isLoading ? <p>Loading Smurfs ...</p> : null}
-                
-                {this.props.error === '' ? null : <p>{this.props.error}</p>}
-
-                {this.props.smurfs.map((smurf) => <Smurf smurf={{...smurf}} />)}
+                {this.isLoading ? <p>Loading Smurfs ....</p> : this.props.smurfs.map(smurf => <Smurf smurf={smurf} />)}
+                {this.error === '' ? null : <p>{this.error}</p>}
             </div>
         )
     }
 }
+
 
 const mapStateToProps = state => {
     return {
