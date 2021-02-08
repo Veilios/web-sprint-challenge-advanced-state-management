@@ -16,7 +16,11 @@ class SmurfDisplay extends React.Component {
     render() {
         return (
             <div>
-                 <Smurf smurfs={this.props.smurfs} />
+                {this.props.isLoading ? <p>Loading Smurfs ...</p> : null}
+                
+                {this.props.error === '' ? null : <p>{this.props.error}</p>}
+
+                {this.props.smurfs.map((smurf) => <Smurf smurf={{...smurf}} />)}
             </div>
         )
     }
